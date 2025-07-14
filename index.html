@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -11,14 +12,14 @@
     }
   </script>
 </head>
+
 <body class="bg-gray-50 flex flex-col min-h-screen">
 
-<!-- NAVBAR -->
-<nav class="bg-emerald-950">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between h-16 items-center">
+  <!-- NAVBAR -->
+  <nav class="bg-emerald-950 p-3">
+    <div class="mx-auto max-w-7xl flex justify-between items-center">
       <div class="flex items-center">
-        <img class="h-10 w-auto" src="IMG_2608.jpeg" alt="Logo" />
+        <img class="h-10 w-auto rounded-md" src="IMG_2608.jpeg" alt="Logo" />
         <div class="hidden sm:flex space-x-6 ml-6">
           <a href="#" class="text-white font-medium hover:text-gray-300">Ballina</a>
           <a href="rrethnesh.html" class="text-white font-medium hover:text-gray-300">Rreth Nesh</a>
@@ -35,52 +36,50 @@
         </button>
       </div>
     </div>
-  </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden sm:hidden bg-emerald-900 transition-all duration-300">
+      <a href="#" class="block px-4 py-3 text-white hover:bg-emerald-800">Ballina</a>
+      <a href="rrethnesh.html" class="block px-4 py-3 text-white hover:bg-emerald-800">Rreth Nesh</a>
+      <a href="kontakti.html" class="block px-4 py-3 text-white hover:bg-emerald-800">Kontakti</a>
+    </div>
+  </nav>
 
-  <!-- Mobile menu -->
-  <div id="mobile-menu" class="hidden sm:hidden bg-emerald-900">
-    <a href="#" class="block px-4 py-3 text-white hover:bg-emerald-800">Ballina</a>
-    <a href="rrethnesh.html" class="block px-4 py-3 text-white hover:bg-emerald-800">Rreth Nesh</a>
-    <a href="kontakti.html" class="block px-4 py-3 text-white hover:bg-emerald-800">Kontakti</a>
-  </div>
-</nav>
-
-<!-- PËRMBAJTJA -->
-<main class="flex-grow">
-  <div class="py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div>
-          <img class="rounded-2xl w-full" src="IMG_2608.jpeg" alt="Tenda Ylli">
-        </div>
-        <div>
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Mirë se vini në TENDA YLLI</h2>
-          <p class="text-gray-700 text-lg mb-4">
-            <strong>Tenda Ylli</strong> është partneri juaj i besueshëm për organizimin e çdo ngjarjeje apo feste. Ne ofrojmë me qira <strong>karrige</strong>, <strong>tavolina</strong> dhe pajisje të tjera për ambiente të hapura dhe të mbyllura, duke i përshtatur sipas kërkesës dhe stilit të eventit tuaj.
-          </p>
-          <p class="text-gray-700 text-lg mb-4">
-            Qoftë për <em>dasma</em>, <em>fejesa</em>, <em>ditëlindje</em>, <em>organizime familjare</em> apo <em>ngjarje biznesi</em>, <strong>Tenda Ylli</strong> siguron gjithçka që ju nevojitet për të krijuar një ambient komod dhe elegant.
-          </p>
-          <ul class="text-gray-700 text-lg mb-4 list-disc pl-5">
-            <li>Karrige komode dhe të pastra</li>
-            <li>Tavolina të ndryshme në përmasa dhe forma</li>
-            <li>Transport dhe montim sipas kërkesës</li>
-          </ul>
-          <p class="text-gray-700 text-lg">
-            <strong>Kujdes:</strong> Kjo faqe është <u>vetëm informuese</u>. Ne nuk realizojmë rezervime përmes kësaj platforme. Për prenotime dhe informata shtesë ju lutemi na kontaktoni direkt.
-          </p>
+  <!-- PËRMBAJTJA -->
+  <main class="flex-grow">
+    <div class="py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div>
+            <img class="rounded-2xl w-full object-cover" src="IMG_2608.jpeg" alt="Tenda Ylli">
+          </div>
+          <div>
+            <h2 class="text-2xl md:text-4xl font-bold text-gray-900 mb-6">Mirë se vini në TENDA YLLI</h2>
+            <p class="text-gray-700 text-lg mb-4">
+              <strong>Tenda Ylli</strong> është partneri juaj i besueshëm për organizimin e çdo ngjarjeje apo feste. Ne ofrojmë me qira <strong>karrige</strong>, <strong>tavolina</strong> dhe pajisje të tjera për ambiente të hapura dhe të mbyllura, duke i përshtatur sipas kërkesës dhe stilit të eventit tuaj.
+            </p>
+            <p class="text-gray-700 text-lg mb-4">
+              Qoftë për <em>dasma</em>, <em>fejesa</em>, <em>ditëlindje</em>, <em>organizime familjare</em> apo <em>ngjarje biznesi</em>, <strong>Tenda Ylli</strong> siguron gjithçka që ju nevojitet për të krijuar një ambient komod dhe elegant.
+            </p>
+            <ul class="text-gray-700 text-lg mb-4 list-disc pl-5">
+              <li>Karrige komode dhe të pastra</li>
+              <li>Tavolina të ndryshme në përmasa dhe forma</li>
+              <li>Transport dhe montim sipas kërkesës</li>
+            </ul>
+            <p class="text-gray-700 text-lg">
+              <strong>Kujdes:</strong> Kjo faqe është <u>vetëm informuese</u>. Ne nuk realizojmë rezervime përmes kësaj platforme. Për prenotime dhe informata shtesë ju lutemi na kontaktoni direkt.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</main>
+  </main>
 
-<!-- FOOTER -->
-<footer class="bg-emerald-950 text-white py-8">
-  <div class="max-w-7xl mx-auto px-4 text-center">
-    <p class="text-lg font-bold">&copy; 2025 Tenda Ylli. Të gjitha të drejtat e rezervuara.</p>
-  </div>
-</footer>
+  <!-- FOOTER -->
+  <footer class="bg-emerald-950 text-white py-8 mt-10">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p class="text-lg font-bold">&copy; 2025 Tenda Ylli. Të gjitha të drejtat e rezervuara.</p>
+    </div>
+  </footer>
 
 </body>
 </html>

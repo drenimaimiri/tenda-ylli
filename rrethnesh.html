@@ -1,78 +1,87 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rreth Nesh</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
 </head>
-<body>
-    <nav class="bg-emerald-950">
-  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-    <div class="relative flex h-16 items-center justify-between">
-      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-        <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset" aria-controls="mobile-menu" aria-expanded="false">
-          <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
-          <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-          </svg>
-        </button>
-      </div>
-      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-        <div class="flex shrink-0 items-center">
-          <img class="h-8 w-auto" src="IMG_2608.jpeg" alt="Logo" />
-        </div>
-        <div class="hidden sm:ml-6 sm:block">
-          <div class="flex space-x-4">
-            <a href="index.html" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white">Ballina</a>
-            <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white">Rreth Nesh</a>
-            <a href="kontakti.html" class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white">Kontakti</a>
-          </div>
-        </div>
+
+<body class="bg-gray-50 flex flex-col min-h-screen">
+
+<!-- NAVBAR -->
+<nav class="bg-emerald-950 p-3">
+  <div class="mx-auto max-w-7xl flex justify-between items-center">
+    <div class="flex items-center">
+      <img class="h-10 w-auto rounded-md" src="IMG_2608.jpeg" alt="Logo" />
+      <div class="hidden sm:flex space-x-6 ml-6">
+        <a href="index.html" class="text-white font-medium hover:text-gray-300">Ballina</a>
+        <a href="#" class="text-white font-medium hover:text-gray-300">Rreth Nesh</a>
+        <a href="kontakti.html" class="text-white font-medium hover:text-gray-300">Kontakti</a>
       </div>
     </div>
+    <div class="sm:hidden">
+      <button onclick="toggleMenu()" class="text-white">
+        <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="hidden sm:hidden bg-emerald-900 transition-all duration-300">
+    <a href="index.html" class="block px-4 py-3 text-white hover:bg-emerald-800">Ballina</a>
+    <a href="#" class="block px-4 py-3 text-white hover:bg-emerald-800">Rreth Nesh</a>
+    <a href="kontakti.html" class="block px-4 py-3 text-white hover:bg-emerald-800">Kontakti</a>
   </div>
 </nav>
 
+<!-- PËRMBAJTJA -->
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-  <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Rreth nesh</h2>
+  <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">Rreth Nesh</h2>
+
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-  <div>
-    <img class="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition duration-300" src="IMG_2611.jpeg" alt="foto 1">
-  </div>
-  <div>
-    <img class="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition duration-300" src="IMG_2613.jpeg" alt="foto 2">
-  </div>
-  <div>
-    <img class="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition duration-300" src="742b2038-45f3-40a2-a0a2-841d2ce03473.jpeg" alt="foto 3">
-  </div>
-  <div>
-    <img class="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition duration-300" src="IMG_2612.jpeg" alt="foto 4">
-  </div>
-  <div>
-    <img class="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition duration-300" src="6a8b1b2a-8134-4193-b5cf-3d27d16bbadd.jpeg" alt="foto 5">
-  </div>
-  <div>
-    <img class="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition duration-300" src="69a01740-d8ed-46bb-b523-b97a82cae15f.jpeg" alt="foto 6">
-  </div>
-   <div>
-    <img class="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition duration-300" src="08957691-b5f0-4a8f-b9c1-1cd28227b6f4.jpeg" alt="foto 7">
-  </div>
-   <div>
-    <img class="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition duration-300" src="0750a76a-f7a5-45bd-8916-844eeaa1ea16.jpeg" alt="foto 8">
-  </div>
-</div>
-
-</div>
-
- <!-- Footer -->
-  <footer class="bg-emerald-950 text-white py-8 w-full">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-      <p class="text-lg font-bold">&copy; 2025 Tenda Ylli. Të gjitha të drejtat e rezervuara.</p>
+    <div>
+      <img class="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition duration-300" src="IMG_2611.jpeg" alt="foto 1">
     </div>
-  </footer>
+    <div>
+      <img class="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition duration-300" src="IMG_2613.jpeg" alt="foto 2">
+    </div>
+    <div>
+      <img class="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition duration-300" src="742b2038-45f3-40a2-a0a2-841d2ce03473.jpeg" alt="foto 3">
+    </div>
+    <div>
+      <img class="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition duration-300" src="IMG_2612.jpeg" alt="foto 4">
+    </div>
+    <div>
+      <img class="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition duration-300" src="6a8b1b2a-8134-4193-b5cf-3d27d16bbadd.jpeg" alt="foto 5">
+    </div>
+    <div>
+      <img class="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition duration-300" src="69a01740-d8ed-46bb-b523-b97a82cae15f.jpeg" alt="foto 6">
+    </div>
+    <div>
+      <img class="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition duration-300" src="08957691-b5f0-4a8f-b9c1-1cd28227b6f4.jpeg" alt="foto 7">
+    </div>
+    <div>
+      <img class="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition duration-300" src="0750a76a-f7a5-45bd-8916-844eeaa1ea16.jpeg" alt="foto 8">
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-emerald-950 text-white py-8 w-full mt-10">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <p class="text-lg font-bold">&copy; 2025 Tenda Ylli. Të gjitha të drejtat e rezervuara.</p>
+  </div>
+</footer>
 
 </body>
 </html>
-
